@@ -1,0 +1,98 @@
+a:hover {
+    text-decoration: none;
+}
+
+header nav {
+    border-radius: 12px;
+    position: fixed;
+    z-index: 9;
+    padding: 30px;
+    top: 0px;
+    transform: translateY(0);
+    opacity: 1;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+header nav ul li a {
+    font-weight: 600;
+    text-decoration: none;
+    color: #bebebe;
+}
+
+header nav ul li a:hover {
+    color: #eeeeee;
+    transition: 0.3s;
+}
+
+.container-main {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.path-div {
+    background: #1e4356;
+    overflow: hidden;
+    height: 100vh;
+    position: relative;
+    padding: 0px;
+}
+
+.path-div img {
+    position: absolute;
+    opacity: 0.5;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.path-info {
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.path-info h3{
+    position: absolute;
+    height: 100%;
+    bottom: 10px;
+}
+
+.path-div:hover {
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 5px
+}
+
+.path-div:hover img {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.container-main a {
+    padding: 0px;
+}
+
+@media only screen and (max-width: 772px) {
+    .path-div {
+        height: 50vh;
+    }
+}
+
+.se-pre-con {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url(https://smallenvelop.com/wp-content/uploads/2014/08/Preloader_11.gif) center no-repeat #fff;
+}
